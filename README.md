@@ -4,7 +4,8 @@ Working eXist-db application that illustrates some principles of XRX.
 
 To build:
 
-```ant
+```
+ant
 Buildfile: /Users/dph445/workspace/exist-apps/abbreviations/build.xml
 
 xar:
