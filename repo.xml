@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meta xmlns="http://exist-db.org/xquery/repo">
+    <description>Harvard Abbreviations</description>
+    <author/>
+    <website/>
+    <status>alpha</status>
+    <license>GNU-LGPL</license>
+    <copyright>true</copyright>
+    <type>application</type>
+    <target>abbreviations</target>
+    <prepare>pre-install.xql</prepare>
+    <finish/>
+    <deployed>2015-11-16T09:56:18.951-05:00</deployed>
+</meta>

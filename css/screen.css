@@ -1,0 +1,46 @@
+body{
+    font-size: 1rem;
+    margin:1em 5%;
+    background-image:none;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;}
+
+form{
+    width:100%;
+    margin:0 auto;
+}
+
+textarea, input[type = 'text']{
+    width:25em;
+    padding: 5px
+}
+
+label,
+input,
+textarea{
+    display:inline-block;
+    margin-top:5px;
+    margin-bottom:5px;
+    margin-left:5px;
+}
+
+label{
+    width:10em;
+    text-align:right;
+    vertical-align:top;
+}
+
+button{
+    margin-left:12.5em;
+    padding:5px;
+    margin-top:10px;
+}
+input + input{
+    float:right;
+}
+dl { margin-left: 2em;}
+dt {margin-top: 0.25em; font-weight: bold;}
+dd {margin-bottom: 1em; margin-top: 0.25em;}
+a:link,a:visited {
+    color: blue; text-decoration: none;
+}
+a:hover,a:active { color: blue; background-color: white; text-decoration: underline;}

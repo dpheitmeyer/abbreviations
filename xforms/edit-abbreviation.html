@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <title>Form</title>
+        <link rel="stylesheet" type="text/css" href="css/screen.css"/>
+        <xf:model>
+            <xf:instance>
+                <entry xmlns="">
+                    <abbreviation/>
+                    <description/>
+                    <url/>
+                </entry>
+            </xf:instance>
+            <xf:submission id="save" method="post" action="submit" replace="none">
+                <xf:action ev:event="xforms-submit-error">
+                    <xf:message>Save failed.</xf:message>
+                </xf:action>
+                <xf:load ev:event="xforms-submit-done" show="replace">
+                    <xf:resource value="index.xq"/>
+                </xf:load>
+            </xf:submission>
+        </xf:model>
+        <link rel="stylesheet" href="css/screen.css"/>
+    </head>
+    <body>
+        <h1>Harvard Abbreviations</h1>
+        <div>
+            <xf:input ref="abbreviation">
+                <xf:label>Abbreviation:</xf:label>
+            </xf:input>
+        </div>
+        <div>
+            <xf:textarea ref="description">
+                <xf:label>Description:</xf:label>
+            </xf:textarea>
+        </div>
+        <div>
+            <xf:input ref="url">
+                <xf:label>URL:</xf:label>
+            </xf:input>
+        </div>
+        <div>
+            <xf:submit submission="save">
+                <xf:label>Save</xf:label>
+            </xf:submit>
+        </div>
+    </body>
+</html>
